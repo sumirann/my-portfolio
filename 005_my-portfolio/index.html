@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f9fd">
+  <meta name="description" content="Web制作・Python開発などの制作実績を紹介するポートフォリオサイトです。">
+  <title>sumirann | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="ホームへ戻る">
+        <span class="brand-mark">&lt;/&gt;</span><span>YOUR<span class="brand-accent">.PORTFOLIO</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="ダークモードに切り替える" title="テーマ切り替え">
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4 8.5 8.5 0 1 0 20 15.2Z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> WELCOME TO MY PORTFOLIO</p>
+        <h1 id="hero-title">アイデアを、<br><span class="accent-text">動くカタチ</span>に。</h1>
+        <p class="hero-name">こんにちは、<strong>sumirann</strong>です。</p>
+        <p class="hero-lead">Webデザインとプログラミングを通して、<br class="desktop-break">「こんなものがあったらいいな」を実現しています。</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">制作実績を見る <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#about">私について <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-tags" aria-label="主な分野"><span>Web Development</span><span>Python</span><span>Creative Coding</span></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="glow glow-one"></div><div class="glow glow-two"></div>
+        <div class="floating-symbol symbol-one">{ }</div><div class="floating-symbol symbol-two">&lt;/&gt;</div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>hello_world.py</span><span class="window-icon">⌘</span></div>
+          <div class="code-lines">
+            <div><span class="line-no">01</span><span class="code-comment"># Welcome to my world</span></div>
+            <div><span class="line-no">02</span><span class="code-purple">class</span> <span class="code-yellow">Creator</span>:</div>
+            <div><span class="line-no">03</span><span class="code-purple">　def</span> <span class="code-blue">__init__</span>(self):</div>
+            <div><span class="line-no">04</span>　　self.skills = [</div>
+            <div><span class="line-no">05</span>　　　<span class="code-green">"Design"</span>,</div>
+            <div><span class="line-no">06</span>　　　<span class="code-green">"Python"</span>,</div>
+            <div><span class="line-no">07</span>　　　<span class="code-green">"Web"</span></div>
+            <div><span class="line-no">08</span>　　]</div>
+            <div><span class="line-no">09</span>　　self.passion = <span class="code-green">"∞"</span></div>
+            <div><span class="line-no">10</span><span class="code-comment"># Let's build something!</span><span class="cursor">▋</span></div>
+          </div>
+          <div class="window-bottom"><span class="terminal-dot"></span> ready to create <span>UTF-8 · Python</span></div>
+        </div>
+        <div class="mini-card"><span class="mini-icon">✦</span><span>Always learning<br><strong>Always creating.</strong></span></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-heading">
+          <p class="section-kicker"><span>01</span> ABOUT ME</p>
+          <h2 id="about-title">私について<span class="title-dot">.</span></h2>
+          <p class="section-intro">好奇心を原動力に、<br>学んで、作って、改善する。</p>
+        </div>
+        <div class="about-content">
+          <p>はじめまして！ Webサイトの制作やPythonを使ったプログラミングに取り組んでいます。見た目のデザインだけでなく、裏側の仕組みを理解しながら作ることが好きです。</p>
+          <p>作って終わりではなく、「もっと使いやすくできるかな？」と考えて改善を重ねることを大切にしています。このサイトでは、これまでの制作物と身につけた技術を紹介します。</p>
+          <div class="about-points">
+            <div><span class="point-icon">✧</span><strong>考える</strong><small>課題やアイデアを整理する</small></div>
+            <div><span class="point-icon">⌘</span><strong>つくる</strong><small>実際に動くものにする</small></div>
+            <div><span class="point-icon">↗</span><strong>磨く</strong><small>試して改善を重ねる</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-topline"><div><p class="section-kicker"><span>02</span> SELECTED WORK</p><h2 id="projects-title">制作実績<span class="title-dot">.</span></h2></div><p>これまでに取り組んだプロジェクトの一部を紹介します。</p></div>
+        <div class="project-grid">
+          <article class="project-card featured-project">
+            <div class="project-graphic graphic-bot" aria-hidden="true"><div class="bot-screen"><div class="bot-status"><span></span> LISTENING...</div><div class="chat-bubble">!omikuji</div><div class="chat-reply">🎉 今日の運勢は大吉！</div><div class="bot-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="graphic-star">✦</span></div>
+            <div class="project-body"><div class="project-label">PROJECT 01 <span>PERSONAL PROJECT</span></div><h3>Spoon配信向けチャットBOT</h3><p>APIを利用してコメントを受信し、自動返信や音声読み上げを行うBOT。イベント受信からデータ保存まで実装しました。</p><div class="tech-tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>VOICEVOX</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-graphic graphic-web" aria-hidden="true"><div class="browser-mock"><div class="browser-bar"><i></i><i></i><i></i></div><div class="browser-hero"><span></span><strong>Design.<br>Build.<br>Create.</strong><div class="browser-pill"></div></div></div><div class="graphic-web-badge">HTML <b>+</b> CSS <b>+</b> JS</div></div>
+            <div class="project-body"><div class="project-label">PROJECT 02 <span>WEB DESIGN</span></div><h3>Webデザイン・サイト制作</h3><p>HTML・CSS・JavaScriptを使ったWebサイト制作。レイアウトや操作のしやすさを意識したデザインに取り組みました。</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-graphic graphic-robot" aria-hidden="true"><div class="track track-one"></div><div class="track track-two"></div><div class="rover"><div class="rover-eye"><i></i><i></i></div><div class="rover-base"></div><div class="wheel wheel-left"></div><div class="wheel wheel-right"></div></div><span class="robot-code">if line_found:<br>　follow_line()</span></div>
+            <div class="project-body"><div class="project-label">PROJECT 03 <span>ROBOTICS</span></div><h3>ライントレーサー開発</h3><p>センサーなどを利用してコースを走行するロボットの開発。プログラムの調整や動作確認を通して制御を学びました。</p><div class="tech-tags"><span>Python</span><span>Raspberry Pi</span><span>Robotics</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container skills-layout"><div class="skills-heading"><p class="section-kicker"><span>03</span> TOOLBOX</p><h2 id="skills-title">スキル<span class="title-dot">.</span></h2><p>制作で使用した主な言語やツール。新しい技術にも少しずつ挑戦しています。</p></div><div class="skill-categories"><div class="skill-group"><h3><span>⌨</span> Frontend</h3><div class="skill-items"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span></div></div><div class="skill-group"><h3><span>⌁</span> Backend / Programming</h3><div class="skill-items"><span>Python</span><span>Flask</span><span>REST API</span><span>SQLite</span></div></div><div class="skill-group"><h3><span>⚙</span> Tools & Others</h3><div class="skill-items"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Raspberry Pi</span></div></div></div></div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container"><div class="contact-box"><div class="contact-decoration" aria-hidden="true">✳</div><p class="section-kicker">04 / NEXT STEP</p><h2 id="contact-title">これからも、<br>新しいものをつくっていく。</h2><p>新しいプロジェクトや学んだことを、このポートフォリオに追加していきます。</p><a class="button button-light" href="#top">ページの先頭へ <span aria-hidden="true">↑</span></a></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span class="footer-brand">&lt;/&gt; YOUR.PORTFOLIO</span><small>© <span id="year">2026</span> sumirann. All rights reserved.</small><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
